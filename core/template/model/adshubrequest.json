@@ -1,0 +1,32 @@
+{
+    "adgroupDestinationType": "",
+    "adgroupNum": 0,
+    "budgetAmount": 0,
+    "budgetCurrency": "",
+    "budgetType": "",
+    "campaignBidStrategy": "",
+    "channel": "",
+    "countries": "",
+    "endTime": "",
+    "industry": "",
+    "isCbo": true,
+    "itemDescription": "",
+    "kpi": [
+      {
+        "expectation": "",
+        "metric": "",
+        "symbol": "",
+        "symbolName": ""
+      }
+    ],
+    "objective": "",
+    "optimizationGoal": "",
+    "price": "",
+    "startTime": "",
+    "targetingAge": "",
+    "targetingBehaviors": [],
+    "targetingGender": "",
+    "targetingInterests": [],
+    "targetingPublisherPlatforms": [],
+    "userId": 0
+  }

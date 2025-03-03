@@ -1,0 +1,234 @@
+{
+    "id": 3728,
+    "adRequirementId": 0,
+    "planName": "投放方案-20250227155156",
+    "planStatus": "SUCCESS",
+    "feedback": None,
+    "reasonTypes": None,
+    "feedbackContent": None,
+    "placementFlag": 0,
+    "createBy": 2923,
+    "createTime": "2025-02-27 15:51:56",
+    "planDetail": {
+        "planId": 3728,
+        "campaignList": [
+            {
+                "channel": "meta",
+                "campaignId": "e006404a-0a52-4dcd-b2fc-de15de41b220",
+                "campaignName": "无袖塑形衬衫-0",
+                "objectives": "销量",
+                "productDescription": "无袖塑形衬衫",
+                "budgetType": "日预算",
+                "currency": "USD",
+                "budgetAmount": 119.0,
+                "spendingLimit": None,
+                "isCbo": True,
+                "isCboName": "开启",
+                "campaignBidStrategy": "自动竞价",
+                "adGroupList": [
+                    {
+                        "adGroupId": "b2b83c33-6a33-4f23-88a6-fbe3b5b522bd",
+                        "adGroupName": "无袖塑形衬衫-adgroup-1",
+                        "place": "网站",
+                        "optimizationGoal": "OFFSITE_CONVERSIONS",
+                        "budgetType": None,
+                        "currency": None,
+                        "budgetAmount": None,
+                        "startTime": "2025-02-28",
+                        "endTime": "2025-03-07",
+                        "countries": [
+                            "澳大利亚",
+                            "沙特阿拉伯",
+                            "美国"
+                        ],
+                        "language": [],
+                        "placements": "MANUAL",
+                        "publisherPlatforms": [
+                            "facebook",
+                            "messenger",
+                            "audience_network",
+                            "instagram"
+                        ],
+                        "age": "18-65",
+                        "minAge": "18",
+                        "maxAge": "65",
+                        "gender": "female",
+                        "genders": [
+                            "女性"
+                        ],
+                        "demographicData": [],
+                        "interests": [
+                            "tops",
+                            "Slim-fit pants",
+                            "Wardrobe",
+                            "Modern Skirts",
+                            "Smart Fit"
+                        ],
+                        "targetingInterests": [
+                            {
+                                "id": "6003644683916",
+                                "name": "tops"
+                            },
+                            {
+                                "id": "6003020572529",
+                                "name": "Slim-fit pants"
+                            },
+                            {
+                                "id": "6003153995505",
+                                "name": "Wardrobe"
+                            },
+                            {
+                                "id": "6003355013837",
+                                "name": "Modern Skirts"
+                            },
+                            {
+                                "id": "6011029017693",
+                                "name": "Smart Fit"
+                            }
+                        ],
+                        "behaviors": [],
+                        "usersLowerBound": 16700000,
+                        "usersUpperBound": 19700000,
+                        "userCountStage": ""
+                    },
+                    {
+                        "adGroupId": "ff6271a8-4762-4910-8042-864cbe836f97",
+                        "adGroupName": "无袖塑形衬衫-adgroup-2",
+                        "place": "网站",
+                        "optimizationGoal": "OFFSITE_CONVERSIONS",
+                        "budgetType": None,
+                        "currency": None,
+                        "budgetAmount": None,
+                        "startTime": "2025-02-28",
+                        "endTime": "2025-03-07",
+                        "countries": [
+                            "澳大利亚",
+                            "沙特阿拉伯",
+                            "美国"
+                        ],
+                        "language": [],
+                        "placements": "AUTO",
+                        "publisherPlatforms": [
+                            "UNLIMITED"
+                        ],
+                        "age": "18-65",
+                        "minAge": "18",
+                        "maxAge": "65",
+                        "gender": "unlimited",
+                        "genders": [
+                            "女性",
+                            "男性"
+                        ],
+                        "demographicData": [],
+                        "interests": [
+                            "Formal wear",
+                            "Elegance Plus Size",
+                            "Outfit Fashion",
+                            "Workwear",
+                            "Bespoke tailoring"
+                        ],
+                        "targetingInterests": [
+                            {
+                                "id": "6003290737525",
+                                "name": "Formal wear"
+                            },
+                            {
+                                "id": "6013494137072",
+                                "name": "Elegance Plus Size"
+                            },
+                            {
+                                "id": "6013192650653",
+                                "name": "Outfit Fashion"
+                            },
+                            {
+                                "id": "6002955811923",
+                                "name": "Workwear"
+                            },
+                            {
+                                "id": "6018455590244",
+                                "name": "Bespoke tailoring"
+                            }
+                        ],
+                        "behaviors": [],
+                        "usersLowerBound": 29500000,
+                        "usersUpperBound": 34700000,
+                        "userCountStage": ""
+                    },
+                    {
+                        "adGroupId": "1936ea3e-58f3-4325-b59d-2f11f6f8ddcb",
+                        "adGroupName": "无袖塑形衬衫-adgroup-3",
+                        "place": "网站",
+                        "optimizationGoal": "OFFSITE_CONVERSIONS",
+                        "budgetType": None,
+                        "currency": None,
+                        "budgetAmount": None,
+                        "startTime": "2025-02-28",
+                        "endTime": "2025-03-07",
+                        "countries": [
+                            "澳大利亚",
+                            "沙特阿拉伯",
+                            "美国"
+                        ],
+                        "language": [],
+                        "placements": "MANUAL",
+                        "publisherPlatforms": [
+                            "facebook",
+                            "messenger",
+                            "audience_network",
+                            "instagram"
+                        ],
+                        "age": "18-65",
+                        "minAge": "18",
+                        "maxAge": "65",
+                        "gender": "female",
+                        "genders": [
+                            "女性"
+                        ],
+                        "demographicData": [],
+                        "interests": [
+                            "Muji",
+                            "Banana Republic",
+                            "Uniqlo",
+                            "H&M"
+                        ],
+                        "targetingInterests": [
+                            {
+                                "id": "6003647215516",
+                                "name": "Muji"
+                            },
+                            {
+                                "id": "6003198855884",
+                                "name": "Banana Republic"
+                            },
+                            {
+                                "id": "6003227158176",
+                                "name": "Uniqlo"
+                            },
+                            {
+                                "id": "6003236917075",
+                                "name": "H&M"
+                            }
+                        ],
+                        "behaviors": [],
+                        "usersLowerBound": 26800000,
+                        "usersUpperBound": 31500000,
+                        "userCountStage": ""
+                    }
+                ]
+            }
+        ],
+        "lifetimeMetric": {
+            "spend": 532.28,
+            "impression": 21209,
+            "click": 814,
+            "conversion": 18,
+            "roas": 2.42,
+            "ctr": 3.84,
+            "cvr": 2.23,
+            "cpm": 25.1,
+            "cpc": 0.65,
+            "cpa": 29.28
+        },
+        "dailyMetricsMap": None
+    }
+}

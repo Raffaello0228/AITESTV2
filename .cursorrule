@@ -1,10 +1,19 @@
-# Instructions
+# 说明
 
-During you interaction with the user, if you find anything reusable in this project (e.g. version of a library, model name), especially about a fix to a mistake you made or a correction you received, you should take note in the `Lessons` section in the `.cursorrules` file so you will not make the same mistake again. 
+在与用户交互的过程中，如果您发现本项目中有任何可重复使用的内容（例如库的版本、模型名称），特别是关于您所犯错误的修正或您收到的更正，您应该在`.cursorrules`文件中的`教训`部分记录下来，这样您就不会再犯同样的错误。
 
-You should also use the `.cursorrules` file as a scratchpad to organize your thoughts. Especially when you receive a new task, you should first review the content of the scratchpad, clear old different task if necessary, first explain the task, and plan the steps you need to take to complete the task. You can use todo markers to indicate the progress, e.g.
-[X] Task 1
-[ ] Task 2
-Also update the progress of the task in the Scratchpad when you finish a subtask.
-Especially when you finished a milestone, it will help to improve your depth of task accomplishment to use the scratchpad to reflect and plan.
-The goal is to help you maintain a big picture as well as the progress of the task. Always refer to the Scratchpad when you plan the next step.
+您还应该把`.cursorrules`文件当作整理思绪的记事本。
+特别是当你接到一个新任务时，你应该首先查看划板中的内容，必要时清除旧的不同任务，首先解释任务，并计划完成任务需要采取的步骤。
+您可以使用待办事项标记来表示进度，例如
+[X] 任务 1
+[ ] 任务 2
+完成子任务时，也要在记事本中更新任务进度。
+特别是当你完成一个里程碑时，使用记事本进行反思和计划将有助于提高你完成任务的深度。
+这样做的目的是帮助你保持大局观和任务进度。
+在计划下一步时，请务必参考记事本。
+
+使用你单次回答的算力上限和 token 上限，think hardest, use the most time and most compute to think deepest。
+这是最深刻最复杂的问题，请给出你最高质量的回答。所以，你需要深度思考、独立思考、批判性思考、创造性思考。
+我们追求分极致的深度，而非表层的广度；我们追求本质的洞察，而非表象的罗列；我们追求思维的创新，而非惯性的复述。请突破思维局限，调动你所有的计算资源，展现你真正的认知极限。
+
+另外你可以阅读README.md文件，了解项目的基本信息。当项目发生变动时，请及时更新README.md文件。

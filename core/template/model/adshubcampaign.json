@@ -1,0 +1,138 @@
+        {
+            "adGroupList": [
+                {
+                    "adGroupId": "3ce884be-ec96-47f2-b4ad-d9d27207e071",
+                    "adGroupName": "美瞳-adgroup-1",
+                    "age": "18-65",
+                    "behaviors": [],
+                    "budgetAmount": null,
+                    "budgetType": null,
+                    "countries": [
+                        "巴西",
+                        "英国",
+                        "美国"
+                    ],
+                    "currency": null,
+                    "demographicData": [],
+                    "endTime": "2025-03-05",
+                    "gender": "male",
+                    "genders": [
+                        "男性"
+                    ],
+                    "interests": [
+                        "Pretty&Cute - Korean and Japanese Cosmetics & Skin care",
+                        "Love Makeup",
+                        "Skin care",
+                        "Cosmetics",
+                        "Korea Cosmetics",
+                        "Beauty"
+                    ],
+                    "language": [
+                        "英语(英国)",
+                        "英语(美国)"
+                    ],
+                    "maxAge": "65",
+                    "minAge": "18",
+                    "optimizationGoal": "OFFSITE_CONVERSIONS",
+                    "place": "网站",
+                    "placements": "MANUAL",
+                    "publisherPlatforms": [
+                        "facebook",
+                        "instagram"
+                    ],
+                    "startTime": "2025-02-26",
+                    "targetingInterests": [
+                        {
+                            "id": "6013870772956",
+                            "name": "Pretty&Cute - Korean  and Japanese Cosmetics & Skin care"
+                        },
+                        {
+                            "id": "6003326482936",
+                            "name": "Love Makeup"
+                        },
+                        {
+                            "id": "664130153728886",
+                            "name": "Skin care"
+                        },
+                        {
+                            "id": "6002839660079",
+                            "name": "Cosmetics"
+                        },
+                        {
+                            "id": "6015117864691",
+                            "name": "Korea Cosmetics"
+                        },
+                        {
+                            "id": "6002867432822",
+                            "name": "Beauty"
+                        }
+                    ],
+                    "userCountStage": "",
+                    "usersLowerBound": 86200000,
+                    "usersUpperBound": 101400000
+                },
+                {
+                    "adGroupId": "914bd42a-9c02-4018-b2b9-74b6e7717841",
+                    "adGroupName": "美瞳-adgroup-2",
+                    "age": "18-65",
+                    "behaviors": [],
+                    "budgetAmount": null,
+                    "budgetType": null,
+                    "countries": [
+                        "巴西",
+                        "英国",
+                        "美国"
+                    ],
+                    "currency": null,
+                    "demographicData": [],
+                    "endTime": "2025-03-05",
+                    "gender": "female",
+                    "genders": [
+                        "女性"
+                    ],
+                    "interests": [
+                        "Fashion accessories",
+                        "Personal stylist"
+                    ],
+                    "language": [
+                        "英语(英国)",
+                        "英语(美国)"
+                    ],
+                    "maxAge": "65",
+                    "minAge": "18",
+                    "optimizationGoal": "OFFSITE_CONVERSIONS",
+                    "place": "网站",
+                    "placements": "MANUAL",
+                    "publisherPlatforms": [
+                        "facebook",
+                        "instagram"
+                    ],
+                    "startTime": "2025-02-26",
+                    "targetingInterests": [
+                        {
+                            "id": "6003348604581",
+                            "name": "Fashion accessories"
+                        },
+                        {
+                            "id": "6003524485642",
+                            "name": "Personal stylist"
+                        }
+                    ],
+                    "userCountStage": "",
+                    "usersLowerBound": 125900000,
+                    "usersUpperBound": 148200000
+                }
+            ],
+            "budgetAmount": 40.0,
+            "budgetType": "日预算",
+            "campaignBidStrategy": "自动竞价",
+            "campaignId": "d2ff2d76-1d62-42b7-9d1a-1a9c90b20ba2",
+            "campaignName": "美瞳-0",
+            "channel": "meta",
+            "currency": "USD",
+            "isCbo": true,
+            "isCboName": "开启",
+            "objectives": "销量",
+            "productDescription": "美瞳",
+            "spendingLimit": null
+        }
