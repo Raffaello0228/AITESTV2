@@ -11,6 +11,7 @@
 - 支持测试结果导出为 Excel
 - 完整的日志记录系统
 - 断点续测功能
+- 支持多worker并行测试执行
 
 ## 项目结构
 
@@ -175,3 +176,81 @@ Excel 测试用例文件需包含以下字段：
 ### 示例
 
 查看 `examples/json_to_excel_example.py` 获取完整示例。
+
+## 并行测试执行
+
+本项目支持使用多个worker并行执行测试，大幅提高测试效率。
+
+### 并行测试特性
+
+- 支持多worker并行执行测试用例
+- 自动均衡分配测试负载
+- 每个worker生成独立的测试结果文件
+- 提供结果合并工具，便于统一分析
+- 支持多种分配策略（按文件、按类、动态分配）
+
+### 使用方法
+
+#### 方法一：使用一键运行脚本
+
+```bash
+# 使用4个worker并行执行所有测试
+python -m scripts.run_tests -n 4
+
+# 指定测试文件或测试类
+python -m scripts.run_tests -n 8 -t tests/test_chat_agent.py
+
+# 使用动态分配策略
+python -m scripts.run_tests -n 4 --dist load
+
+# 不合并测试结果
+python -m scripts.run_tests -n 4 --no-merge
+
+# 合并后删除源文件
+python -m scripts.run_tests -n 4 --delete-source
+```
+
+#### 方法二：分步执行
+
+1. 运行并行测试：
+
+```bash
+# 使用4个worker并行执行测试
+python -m scripts.run_parallel_tests -n 4
+
+# 指定测试文件或测试类
+python -m scripts.run_parallel_tests -n 4 -t tests/test_chat_agent.py::TestChatAgent
+```
+
+2. 合并测试结果：
+
+```bash
+# 合并测试结果
+python -m scripts.merge_test_results
+
+# 合并后删除源文件
+python -m scripts.merge_test_results --delete-source
+```
+
+#### 方法三：直接使用pytest-xdist
+
+```bash
+# 使用4个worker并行执行测试
+pytest -n 4 tests/
+
+# 使用动态分配策略
+pytest -n 4 --dist=load tests/
+```
+
+### 分配策略说明
+
+- `loadfile`：按文件分配测试到不同workers（默认）
+- `loadscope`：按测试类分配测试到不同workers
+- `load`：动态分配测试用例，根据执行时间自动平衡负载
+
+### 注意事项
+
+1. 确保测试用例之间相互独立，避免共享状态导致的竞争条件
+2. 数据库操作应使用连接池，避免连接冲突
+3. 文件操作应避免多个worker同时写入同一文件
+4. 测试结果会分散在多个文件中，需要使用合并工具整合
