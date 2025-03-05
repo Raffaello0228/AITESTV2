@@ -1,6 +1,6 @@
 import json
 from core.model.rag_model import RAGModel
-from core.service.llm_service import chat_gpt_pure_text
+from core.service.llm_service import chat_gpt_pure_text, create_messages
 from core.utils.database import DBPool
 from core.common.method import num_tokens_from_string
 from core.utils.logger import logger
@@ -13,9 +13,9 @@ meet_ask_his = """请你作为用户模拟与广告营销知识问答系统对�
 目标问题：{1}
 请站在用户角度,作为提问者根据历史对话向系统提问，引导系统回答目标问题
 回答保持简洁，限制在20字以内
-输出内容被直接引用,所以请勿添加任何前后缀,请直接输出结果
+请用json格式输出,key为q,value为输出结果
 """
-meetask_db_pool = DBPool(**meetask_db_info)
+meetask_db_pool = DBPool()
 meetask_field_dict = {
     "qa_id": "a.id",
     "answer_first_char_time": "answer_first_char_time",
@@ -61,7 +61,7 @@ meetask_sql_template = """select
             order by a.create_time desc;"""
 
 
-class MeetAskModel(RAGModel):
+class MeetAskModel:
 
     def __init__(
         self,
@@ -72,7 +72,7 @@ class MeetAskModel(RAGModel):
         response=None,
         **kwargs,
     ):
-        super().__init__(**kwargs)
+        # super().__init__(**kwargs)
         self.qa_id = qa_id
         self.query = query
         self.gt_answer = gt_answer
@@ -156,12 +156,18 @@ class MeetAskModel(RAGModel):
         if self.sql_result.get("answer_type", "") == 3:
             prompt = meet_ask_his.format(
                 self.history,
-                self.target_question if self.target_question else self.question,
+                self.target_question if self.target_question else self.query,
             )
-            meet_ask_dial_response = chat_gpt_pure_text([{"q": prompt}])
-            logger.info(f"生成追问问题：{meet_ask_dial_response}")
-            # reply_question = str(meet_ask_dial_response).replace("输出内容：", "").strip()
-            self.follow_up_question = meet_ask_dial_response
+            meet_ask_dial_response = chat_gpt_pure_text(
+                create_messages([{"q": prompt}])
+            )
+            try:
+                question = json.loads(meet_ask_dial_response)
+                question = question.get("q", "")
+            except:
+                question = meet_ask_dial_response
+            logger.info(f"生成追问问题：{question}")
+            self.follow_up_question = question
             return True
         return False
 

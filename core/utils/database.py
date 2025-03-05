@@ -43,7 +43,7 @@ class DBPool:
         try:
             conn = cls.get_pool().connection()
             cursor = conn.cursor()
-            logger.info(f"执行查询: {sql}")
+            # logger.info(f"执行查询: {sql}")
             cursor.execute(sql)
             result = cursor.fetchall()
             logger.info(f"查询返回 {len(result)} 条记录")

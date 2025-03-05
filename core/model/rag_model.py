@@ -6,7 +6,9 @@ import pandas as pd
 
 
 class RAGModel:
-    def __init__(self, question=None, answer=None, contexts=None, ground_truths=None):
+    def __init__(
+        self, question=None, answer=None, contexts=None, ground_truths=None, **kwargs
+    ):
         self.question = question
         self.answer = answer
         self.contexts = contexts
